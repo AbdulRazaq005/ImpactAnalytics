@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC");
+html {
+  font-size: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+.App {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+}
+.App-header {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 1.5rem;
+  font: normal 1.5rem "Playfair Display SC", serif;
+  background-color: #f8f8f8;
+  /* padding: 2rem; */
+}
+a {
+  text-decoration: none;
+}
+nav a {
+  flex-grow: 1;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  margin: 0.3rem 0 0rem 0;
+  position: relative;
+  color: #000;
+}
+
+nav a:hover {
+  background-color: rgb(221, 221, 221);
+  transform: scaleX(1);
+}
+.active-tab {
+  background-color: rgb(192, 192, 192);
+}
+.main {
+  text-align: center;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.search {
+  width: 30rem;
+  height: 2.5rem;
+  border: gray 0.15rem solid;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: large;
+  margin-bottom: 1rem;
+}

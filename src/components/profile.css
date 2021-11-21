@@ -1,0 +1,44 @@
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  justify-content: center;
+  height: 1rem;
+}
+.profile-container img {
+  height: 18rem;
+  width: 15rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 5px 5px 20px -10px;
+}
+.profile-body {
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.profile-body h5 {
+  margin-top: 1rem;
+}
+.btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 1rem 1rem 0 0;
+  outline: none;
+  cursor: pointer;
+  font-size: x-large;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.green {
+  background-color: rgb(135, 218, 12);
+}
+.red {
+  background-color: rgb(252, 39, 82);
+}
+.green:hover {
+  background-color: rgb(95, 158, 0);
+}
+.red:hover {
+  background-color: rgb(182, 17, 50);
+}
