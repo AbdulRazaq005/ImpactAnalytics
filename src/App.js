@@ -61,7 +61,7 @@ function App({ history }) {
           </nav>
         </header>
         <Routes>
-          <Route path="*" element={<Applications users={users} />} />
+          <Route path="/" element={<Applications users={users} />} />
           <Route
             exact
             path="/shortlisted"
