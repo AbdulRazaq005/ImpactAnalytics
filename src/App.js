@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Applications from "./components/Applications";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
 import Selected from "./components/Selected";
 import Rejected from "./components/Rejected";
 import Profile from "./components/Profile";
+import "./app.css";
 
 function App({ history }) {
   const [users, setUsers] = useState([]);
@@ -60,7 +61,7 @@ function App({ history }) {
           </nav>
         </header>
         <Routes>
-          <Route exact path="/" element={<Applications users={users} />} />
+          <Route path="*" element={<Applications users={users} />} />
           <Route
             exact
             path="/shortlisted"
@@ -68,6 +69,7 @@ function App({ history }) {
           />
           <Route exact path="/rejected" element={<Rejected users={users} />} />
           <Route
+            exact
             path="/:id"
             element={<Profile users={users} updateStatus={updateStatus} />}
           />
